@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Now</h1>
+        <div class="weather-form">
+            <input type="text" id="city" placeholder="Enter City Name" />
+            <button onclick="getWeather()">Get Weather</button>
+        </div>
+        
+        <!-- Loading spinner -->
+        <div id="loading" style="display: none;">
+            <div class="spinner"></div>
+        </div>
+        
+       <!-- Weather Result -->
+<div id="weather-result" style="display: none;">
+  <h2 id="city-name"></h2>
+  <img id="weather-icon" alt="Weather Icon" />
+  <p id="temperature"></p>
+  <p id="condition"></p>
+  <p id="humidity"></p>
+  <p id="wind-speed"></p>
+  <p id="feels-like"></p>
+  <p id="uv-index"></p>
+</div>
+
+<!-- Error Message -->
+<div id="error-message" style="display: none; color: red;"></div>
+</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
